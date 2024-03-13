@@ -5,23 +5,31 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<p></p>
+
+ <a asp-page="Create">Create New</a>
+       
 
 <p>
-    <a asp-page="Create">Create New</a>
 </p>
 
 <form>
-    <p>
-        <select asp-for="MovieGenre" asp-items="Model.Genres">
-            <option value="">All</option>
-        </select>
-        Title: <input type="text" asp-for="SearchString" />
-        <input type="submit" value="Filter" />
-    </p>
+    
+           <label>Genre:</label>
+            <select asp-for="MovieGenre" asp-items="Model.Genres">
+                <option value="" class="dropdown-menu">All</option>
+            </select>
+       
+        
+        <label>Title:</label>
+        <input type="text" asp-for="SearchString" placeholder="Search" />
+        <input type="submit" value="Filter" class="btn btn-outline-success" />
+    
 </form>
 
-<table class="table">
+<p></p>
+
+<table class="table table-bordered">
     <thead>
         <tr>
             <th>
