@@ -1,7 +1,7 @@
 ﻿/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
-a.navbar-brand {
+/*a.navbar-brand {
   white-space: normal;
   text-align: center;
   word-break: break-all;
@@ -45,4 +45,100 @@ button.accept-policy {
   width: 100%;
   white-space: nowrap;
   line-height: 60px;
+}
+*/
+
+/*`sm` applies to x-small devices (portrait phones, less than 576px)*/
+@media (max-width: 320px) {
+    .hero-image {
+        background: none;
+        background-attachment: fixed;
+        background-color: #214C4B;
+        background-blend-mode: overlay;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .navbar-brand {
+        font-family: var(--headers-font);
+        font-size: 20px;
+        color: var(--heading-text-color);
+    }
+}
+
+/*`md` applies to small devices (landscape phones, less than 768px)*/
+@media (max-width: 725px) {
+    .hero-image {
+        background: none;
+        background-color: #214C4B;
+        background-blend-mode: overlay;
+        background-size: cover;
+    }
+
+    .navbar-brand {
+        font-family: var(--headers-font);
+        font-size: 40px;
+        color: var(--heading-text-color);
+    }
+}
+
+/*Apply styles starting from medium devices and up to extra large devices*/
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .hero-image {
+        background: url("../img/video-4698412_1920.jpg") no-repeat center;
+        background-color: #214C4B;
+        background-blend-mode: overlay;
+        background-size: cover;
+        height: 50vh;
+    }
+
+    .navbar-brand {
+        font-family: var(--headers-font);
+        font-size: 40px;
+        color: var(--heading-text-color);
+    }
+
+}
+
+:root {
+    --heading-text-color: #FFC857;
+    --body-text-color: #FAF9F6;
+    --button-bg-color: #FF7F11;
+    --button-text-color: #214C4B;
+    --headers-font: 'Press Start 2P', 'Helvetica', 'Arial',sans-serif;
+}
+
+body {
+    background-color: #214C4B;
+    font-family: 'Roboto','Helvetica','Arial',sans-serif;
+    color: var(--body-text-color);
+}
+
+
+
+.navbar-brand {
+    font-family: var(--headers-font);
+    font-size: 2em;
+    color: var(--heading-text-color);
+}
+
+.header-menu.scrolled {
+    background-color: #214C4B !important;
+    border-bottom: solid 1px #FFC857;
+    transition: background-color 200ms linear;
+}
+
+.section-headers {
+    color: var(--heading-text-color);
+    font-family: var(--headers-font);
+}
+
+a {
+    color: #D62828;
+    text-decoration:none;
+}
+
+a:hover {
+    color: var(--button-bg-color);
+    cursor: pointer;
 }

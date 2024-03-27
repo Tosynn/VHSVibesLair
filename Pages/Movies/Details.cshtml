@@ -46,6 +46,18 @@
     </dl>
 </div>
 <div>
-    <a asp-page="./Edit" asp-route-id="@Model.Movie.Id">Edit</a> |
-    <a asp-page="./Index">Back to List</a>
+
+    <button class="btn bg-warning mx-auto">
+        <i class="bi bi-pencil-fill"></i> <a asp-page="./Edit" asp-route-id="@Model.Movie.Id" class="text-decoration-none">Edit</a>
+    </button>
+    
+    <button class="btn bg-warning mx-auto">
+        <i class="bi bi-chevron-left"></i><a asp-page="./Index" class="text-decoration-none">Back to List</a>
+    </button>
+
+   
+
+
+    
+    
 </div>
