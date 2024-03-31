@@ -5,6 +5,7 @@ If you have new suggestions to add to the list of movies, kindly reach out to me
 Homepage View 
 ![Home Page View](/wwwroot/img/Homepage.png)
 
+Admin Page View
 ![Admin Page View](/wwwroot/img/Adminpage.png)
 
 
