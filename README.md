@@ -3,4 +3,7 @@ This is built to be a repository of vintage movies for lovers of classics and ot
 If you have new suggestions to add to the list of movies, kindly reach out to me. Cheers.
 
 Homepage View 
-![Homepage](Home Page - v1.png)
+![Homepage View](/wwwroot/img/Homepage.png)
+
+Format: ![VHSVibesLair](/wwwroot/img/Homepage.png)
+
