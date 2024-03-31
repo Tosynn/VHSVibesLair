@@ -5,5 +5,4 @@ If you have new suggestions to add to the list of movies, kindly reach out to me
 Homepage View 
 ![Homepage View](/wwwroot/img/Homepage.png)
 
-Format: ![VHSVibesLair](/wwwroot/img/Homepage.png)
 
