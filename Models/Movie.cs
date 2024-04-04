@@ -22,4 +22,7 @@ public class Movie
 
     [RegularExpression(@"^[A-Z]+[a-zA-Z0-9""'\s-]*$"), StringLength(5)]
     public string Rating { get; set; } = string.Empty;
+
+    [StringLength(500, MinimumLength = 1)]
+    public string? Plot { get; set; } = string.Empty;
 }

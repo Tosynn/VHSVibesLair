@@ -59,6 +59,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.Movie[0].Rating)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Movie[0].Plot)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -81,15 +84,18 @@
                 @Html.DisplayFor(modelItem => item.Rating)
             </td>
             <td>
-                    <button class="btn btn-warning mx-auto">
+                @Html.DisplayFor(modelItem => item.Plot)
+            </td>
+            <td>
+                    <button class="btn btn-warning mx-auto my-1">
                         <a asp-page="./Edit" asp-route-id="@item.Id" class="text-light text-decoration-none">Edit</a>
                     </button>
 
-                    <button class="btn btn-success mx-auto">
+                    <button class="btn btn-success mx-auto my-1">
                         <a asp-page="./Details" asp-route-id="@item.Id" class="text-light text-decoration-none">Details</a>
                     </button>
 
-                    <button class="btn bg-danger mx-auto">
+                    <button class="btn bg-danger mx-auto my-1">
                         <a asp-page="./Delete" asp-route-id="@item.Id" class="text-light text-decoration-none">Delete</a>
                     </button>
                

@@ -29,7 +29,8 @@ public static class SeedData
                     ReleaseDate = DateTime.Parse("1989-2-12"),
                     Genre = "Romantic Comedy",
                     Price = 7.99M,
-                    Rating = "R"
+                    Rating = "R",
+                    Plot = "Harry and Sally have known each other for years, and are very good friends, but they fear sex would ruin the friendship."
                 },
 
                 new Movie
@@ -38,7 +39,8 @@ public static class SeedData
                     ReleaseDate = DateTime.Parse("1984-3-13"),
                     Genre = "Comedy",
                     Price = 8.99M,
-                    Rating = "G"
+                    Rating = "G",
+                    Plot= "A squad of supernatural investigators are Earth's only defense against an evil ghost wizard and his minions."
                 },
 
                 new Movie
@@ -47,7 +49,8 @@ public static class SeedData
                     ReleaseDate = DateTime.Parse("1986-2-23"),
                     Genre = "Comedy",
                     Price = 9.99M,
-                    Rating = "G"
+                    Rating = "G",
+                    Plot = "The discovery of a massive river of ectoplasm and a resurgence of spectral activity allows the staff of Ghostbusters to revive the business."
                 },
 
                 new Movie
@@ -56,7 +59,8 @@ public static class SeedData
                     ReleaseDate = DateTime.Parse("1959-4-15"),
                     Genre = "Western",
                     Price = 3.99M,
-                    Rating = "NA"
+                    Rating = "PG",
+                    Plot = "A small-town sheriff in the American West enlists the help of a disabled man, a drunk, and a young gunfighter in his efforts to hold in jail the brother of the local bad guy"
                 }
             );
             context.SaveChanges();
